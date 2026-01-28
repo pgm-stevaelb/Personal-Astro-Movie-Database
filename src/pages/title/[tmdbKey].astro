@@ -1,0 +1,9 @@
+---
+import AppLayout from "../../layouts/AppLayout.astro";
+import TitleDetailView from "../../components/TitleDetailView";
+
+const { tmdbKey } = Astro.params;
+---
+<AppLayout title="Title detail">
+  <TitleDetailView client:load tmdbKey={tmdbKey} />
+</AppLayout>

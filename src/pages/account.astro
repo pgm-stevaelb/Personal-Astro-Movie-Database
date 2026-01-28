@@ -1,0 +1,15 @@
+---
+import AppLayout from "../layouts/AppLayout.astro";
+import AccountMenu from "../components/AccountMenu";
+---
+<AppLayout title="Account">
+  <div className="grid gap-6 md:grid-cols-[1.2fr_0.8fr]">
+    <section className="space-y-4">
+      <h3 className="text-lg font-semibold">Profile</h3>
+      <p className="text-sm text-muted-foreground">
+        Your profile is created the first time you sign in. Manage your session below.
+      </p>
+    </section>
+    <AccountMenu client:load variant="panel" />
+  </div>
+</AppLayout>

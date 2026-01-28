@@ -1,0 +1,9 @@
+---
+import AppLayout from "../layouts/AppLayout.astro";
+import AuthForm from "../components/AuthForm";
+---
+<AppLayout title="Sign in">
+  <div className="mx-auto max-w-md">
+    <AuthForm client:load />
+  </div>
+</AppLayout>
